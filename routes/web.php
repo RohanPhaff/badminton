@@ -14,4 +14,6 @@ use App\Http\Controllers\BadmintonController;
 |
 */
 
-Route::resource('/', BadmintonController::class);
+Route::get('/', function () {
+    return view('welcome');
+});
